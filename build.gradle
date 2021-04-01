@@ -18,7 +18,13 @@ kotlin {
     jvm()
     js(BOTH) {
         nodejs()
-        browser()
+        browser {
+            testTask {
+                useKarma {
+                    useFirefox()
+                }
+            }
+        }
     }
 
     sourceSets {
