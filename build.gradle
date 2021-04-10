@@ -19,6 +19,7 @@ kotlin {
     js(BOTH) {
         nodejs()
         browser()
+        useCommonJs()
     }
 
     sourceSets {
